@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekapaysma Virtual World</title>
+    <!-- FavIcon -->
+    <link rel="icon" href="/public/image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/final.css">
+    <link rel="stylesheet" href="/public/css/mine-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body >
+
+    <div class="relative h-screen">
+        <header class="relative pb-6 lg:pb-0 z-50" data-aos="fade-up" data-aos-duration="800">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <!-- lg+ -->
+                <nav class="flex items-center justify-between h-16 lg:h-20">
+                    <div class="flex-shrink-0">
+                        <a href="#" title="" class="flex">
+                            <img class="w-auto h-11 lg:h-20" src="/public/image/logo.png" alt="" />
+                        </a>
+                    </div>
+    
+                    <!-- Menu Button for mobile -->
+                    <button id="menu-toggle" type="button" class="inline-flex p-2 text-white transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+                        <svg id="menu-icon" class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                        </svg>
+                        <svg id="close-icon" class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+    
+                    <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                        <a href="#tentang" title="" class="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Tentang</a>
+                        <a href="#fitur" title="" class="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Fitur Aplikasi</a>
+                        <a href="#carakerja" title="" class="text-base font-medium text-white transition-all duration-200 hover:text-orange-500 focus:text-orange-500">Cara Kerja</a>
+
+                    </div>
+                </nav>
+    
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="lg:hidden bg-white h-screen w-1/2 fixed top-0 right-0 transition-transform ease-in-out hidden">
+                    <div id="close" class="item-start w-4 h-6 p-3 absolute top-0 left-0 mb-16">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
+                        <a href="#tentang" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Tentang</a>
+                        <a href="#fitur" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Fitur Aplikasi</a>
+                        <a href="#carakerja" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Cara Kerja</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="/public/image/hero.mp4" type="video/mp4">
+        </video>
+    
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+    
+        <section class="relative flex items-center justify-start text-left" style="height: 750px">
+            <div class="px-4 relative w-full">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="flex mb-3">
+                        <img class="h-12 w-auto " src="/public/image/sma.png" alt="">
+                        <img class="h-12 w-auto" src="/public/image/stikom.png" alt="">
+                    </div>
+                    <h1 class="text-2xl w-2/2 font-bold md:text-4xl lg:text-5xl xl:text-6xl leading-9">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-200">
+                            Menjelajah  <span class="underline italic">Dunia Virtual</span> <br> SMA N 1 Payangan
+                        </span>
+                    </h1>
+                    <p class="mt-5 text-base w-1/2 text-white sm:text-xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Berinteraksi dengan dunia digital.</p>
+    
+                    <a href="#" title="" class="inline-flex items-center px-4 py-2 lg:px-6 lg:py-4 mt-8 font-semibold text-sm lg:text-lg text-white transition-all duration-200 bg-orange-500 rounded-lg sm:mt-16 hover:bg-yellow-700 focus:bg-yellow-700" role="button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        Explorasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-10 bg-gray-900 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <p class="text-sm font-semibold tracking-widest text-orange-500 uppercase">Tentang</p>
+    
+                <h2 class="mt-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Ekapaysma Virtual World</h2>
+                <p class="text-base text-center mt-3 text-gray-300">Ekapaysma Virtual World adalah kolaborasi Mahasiswa ITB Stikom Bali dengan SMA N 1 Payangan untuk membuat teknologi Virtual Reality sebagai media memperkenalkan lingkungan SMA N 1 Payangan secara kreatif dan imersif.  </p>
+            </div>
+    
+            <div class="grid items-center grid-cols-1 mt-12 gap-y-10 lg:grid-cols-5 sm:mt-20 gap-x-4">
+                <!-- Bagian Fitur -->
+                <div class="space-y-8 lg:pr-16 xl:pr-24 lg:col-span-2 lg:space-y-12">
+                    <!-- Fitur 1 -->
+                    <div class="flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <svg class="flex-shrink-0 w-9 h-9"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold text-white">Navigasi Virtual</h3>
+                            <p class="mt-3 text-base text-gray-400">Jelajahi fasilitas sekolah secara virtual, seperti ruang kelas, laboratorium, dan perpustakaan.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Fitur 2 -->
+                    <div class="flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <svg class="flex-shrink-0 w-9 h-9 text-white"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  fill="#ffffff" d="M576 64L64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l120.4 0c24.2 0 46.4-13.7 57.2-35.4l32-64c8.8-17.5 26.7-28.6 46.3-28.6s37.5 11.1 46.3 28.6l32 64c10.8 21.7 33 35.4 57.2 35.4L576 448c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64zM96 240a64 64 0 1 1 128 0A64 64 0 1 1 96 240zm384-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold text-white">Pengalaman Imersif</h3>
+                            <p class="mt-3 text-base text-gray-400">Rasakan pengalaman seperti berada di SMA N 1 Payangan melalui teknologi VR yang interaktif.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Fitur 3 -->
+                    <div class="flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <svg class="flex-shrink-0 w-9 h-9 text-white"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path  fill="#ffffff" d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c-35.3 0-64 28.7-64 64l-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0c0 35.3 28.7 64 64 64l0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40c35.3 0 64-28.7 64-64l40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0c0-35.3-28.7-64-64-64l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40zM160 128l192 0c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32l0-192c0-17.7 14.3-32 32-32zm192 32l-192 0 0 192 192 0 0-192z"/></svg>
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold text-white">Pengembangan Teknologi Digital</h3>
+                            <p class="mt-3 text-base text-gray-400">Komitmen SMA N 1 Payangan dalam mendukung transformasi pendidikan melalui pemanfaatan teknologi modern. </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Bagian Video -->
+                <div class="lg:col-span-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="relative">
+                        <img class="rounded-lg" src="/public/image/sma.jpg" alt="">
+
+                        <!-- Titik 1 -->
+                        <div class="absolute animate-ping bg-white h-5 w-5 rounded-full cursor-pointer"
+                            style="top: 20%; left: 30%" onclick="openVideoPopup('video1')">
+                        </div>
+                        <div class="absolute bg-white h-5 w-5 rounded-full cursor-pointer"
+                        style="top: 20%; left: 30%" onclick="openVideoPopup('video1')">
+                    </div>
+
+                        <!-- Titik 2 -->
+                        <div class="absolute animate-ping bg-white h-5 w-5 rounded-full cursor-pointer"
+                            style="top: 70%; left: 60%" onclick="openVideoPopup('video2')"></div>
+                        <div class="absolute bg-white h-5 w-5 rounded-full cursor-pointer"
+                            style="top: 70%; left: 60%" onclick="openVideoPopup('video2')"></div>
+
+                            
+                        <!-- Titik 3 -->
+                        <div class="absolute animate-ping bg-white h-5 w-5 rounded-full cursor-pointer"
+                            style="top: 15%; left:60%" onclick="openVideoPopup('video3')"></div>
+                        <div class="absolute  bg-white h-5 w-5 rounded-full cursor-pointer"
+                            style="top: 15%; left: 60%" onclick="openVideoPopup('video3')"></div>
+                    </div>
+                </div>
+
+                <!-- Popup Video -->
+                <div id="video-popup" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 hidden" onclick="closeVideoPopup(event)">
+                    <div class="relative w-full max-w-3xl" onclick="event.stopPropagation()">
+                        <!-- Close Button -->
+                        <button class="absolute top-3 right-3 text-white bg-gray-800 rounded-full px-2 py-1  z-20" onclick="closeVideoPopup()">
+                            ✕
+                        </button>
+
+                        <!-- Video Content -->
+                        <div id="video1" class="hidden">
+                            <video autoplay loop muted playsinline class="w-full rounded-lg">
+                                <source src="/public/image/lab.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="video2" class="hidden">
+                            <video autoplay loop muted playsinline class="w-full rounded-lg">
+                                <source src="/public/image/depan.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="video3" class="hidden">
+                            <video autoplay loop muted playsinline class="w-full rounded-lg">
+                                <source src="/public/image/komputer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Feature -->
+    <section id="fitur" class="bg-gray-950 py-16 lg:py-24 2xl:pb-24 2xl:bg-gray-900">
+        <div class="px-4 mx-auto bg-gray-950 max-w-7xl sm:px-6 lg:px-8 2xl:rounded-xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="py-8 lg:py-10 2xl:px-24">
+                <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
+                    
+                    <!-- Gambar Mockup -->
+                    <div class="lg:order-2 2xl:-mr-24" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <img class="w-full" src="/public/image/mockup.png" alt="Mockup aplikasi Ekapaysma Virtual World" />
+                    </div>
+    
+                    <!-- Konten Teks -->
+                    <div class="lg:order-1">
+                        <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-snug" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Apakah Kamu siap <br class="hidden xl:block" />untuk menjelajah?
+                        </h2>
+                        <p class="mt-3 text-base text-gray-200" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            Kami berinovasi untuk memberikan Anda pengalaman dan informasi immersive melalui dunia virtual.
+                        </p>
+    
+                        <!-- Daftar Fitur -->
+                        <ul class="grid grid-cols-1 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
+                            <li class="flex items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-3 font-medium text-white"> Lingkungan Sekolah </span>
+                            </li>
+                            <li class="flex items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-3 font-medium text-white"> Prestasi Sekolah </span>
+                            </li>
+                            <li class="flex items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-3 font-medium text-white"> Ekstrakurikuler </span>
+                            </li>
+                            <li class="flex items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-3 font-medium text-white"> Fasilitas Sekolah </span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="carakerja" class="py-10 bg-gray-900 sm:py-16 lg:py-24 ">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Bagimana Cara kerjanya?</h2>
+                <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-400" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Pelajari bagaimana cara kerja dari ekapaysma virtual world untuk dapat menjelajah di dunia virtual.</p>
+            </div>
+    
+            <div class="relative mt-12 lg:mt-20" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="absolute inset-x-0 hidden xl:px-44 top-2 md:block md:px-20 lg:px-28">
+                    <img class="w-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/2/curved-dotted-line.svg" alt="" />
+                </div>
+    
+                <div class="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 gap-x-12">
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700"> 1 </span>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-tight text-white md:mt-10">Download Aplikasi</h3>
+                        <p class="mt-4 text-base text-gray-300">Unduh aplikasi Ekapaysma Virtual World melalui perangkat Anda untuk memulai perjalanan Anda di dunia virtual. </p>
+                    </div>
+    
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700"> 2 </span>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-tight text-white md:mt-10">Gunakan VR Box</h3>
+                        <p class="mt-4 text-base text-gray-300">Pasangkan perangkat VR Box Anda untuk merasakan pengalaman eksplorasi yang lebih imersif.</p>
+                    </div>
+    
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700"> 3 </span>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold leading-tight text-white md:mt-10">Siap bereksplorasi</h3>
+                        <p class="mt-4 text-base text-gray-300">Masuki dunia virtual dan mulai menjelajah! Temukan fitur-fitur menarik, berinteraksi dengan lingkungan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="py-10 bg-white sm:py-16 lg:py-24 mt-4">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="max-w-2xl mx-auto text-left sm:text-center">
+                <p class="text-sm font-semibold tracking-widest text-gray-900 uppercase">Teknologi yang kami Gunakan</p>
+
+            </div>
+    
+            <div class="mt-4 space-y-8 sm:space-x-12 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-y-0 md:space-x-20 lg:mt-20">
+                <div class="hidden lg:block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <img class="object-contain w-full h-10 mx-auto" src="/public/image/Cardboard.png" alt="" />
+                </div>
+
+                <div class="hidden lg:block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <img class="object-contain w-full h-10 mx-auto" src="/public/image/Unity.png" alt="" />
+                </div>
+
+                <div class="hidden lg:block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <img class="object-contain w-full h-10 mx-auto" src="/public/image/sketchup-2020.png" alt="" />
+                </div>   
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-10 bg-white sm:py-16 lg:py-24 w-full">
+        <div class="flex flex-col lg:flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl text-center lg:text-left">
+                <h2 class="mt-10 text-3xl font-bold leading-tight text-gray-950 sm:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"> Download Aplikasi</h2>
+                <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    Ekapaysma Virtual World kini tersedia di perangkat Android, menghadirkan pengalaman eksplorasi dunia virtual yang imersif dan interaktif langsung di genggaman Anda.
+                </p>
+            </div>
+
+            <div class="mt-6 lg:mt-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <a href="#" title="" class="inline-flex items-center justify-center px-4 py-4 gap-4 text-black transition-all duration-200 border-2 border-black rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                    Download untuk Android
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-10">   
+            <hr class="mb-10 border-gray-200" />
+            <p class="text-sm text-center text-gray-600">© Copyright 2025, All Rights Reserved by ITB STIKOM BALI | SMA N 1 Payangan</p>
+        </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    // Function to open the video popup and display the correct video
+    function openVideoPopup(videoId) {
+        document.getElementById('video-popup').classList.remove('hidden');
+        // Hide all videos
+        document.getElementById('video1').classList.add('hidden');
+        document.getElementById('video2').classList.add('hidden');
+        document.getElementById('video3').classList.add('hidden');
+        // Show the selected video
+        document.getElementById(videoId).classList.remove('hidden');
+    }
+
+    // Function to close the video popup
+    function closeVideoPopup(event = null) {
+        if (event && event.target.id === 'video-popup') {
+            document.getElementById('video-popup').classList.add('hidden');
+        } else {
+            document.getElementById('video-popup').classList.add('hidden');
+        }
+    }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close');
+        const overlay = document.getElementById('overlay'); // Overlay untuk menutup menu jika klik di luar
+
+        // Fungsi untuk menampilkan menu mobile
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden'); // Toggle menu mobile terbuka/tutup
+            overlay.classList.toggle('hidden'); // Toggle overlay saat menu terbuka/tutup
+        });
+
+        // Fungsi untuk menutup menu mobile
+        closeMenu.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden'); // Menyembunyikan menu mobile
+            overlay.classList.add('hidden'); // Menyembunyikan overlay
+        });
+
+        // Menutup menu mobile jika klik di luar menu (di overlay)
+        overlay.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden'); // Menyembunyikan menu mobile
+            overlay.classList.add('hidden'); // Menyembunyikan overlay
+        });
+    </script>
+
+</body>
+</html>
